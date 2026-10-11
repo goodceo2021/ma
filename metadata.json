@@ -1,0 +1,6 @@
+{
+  "name": "間刻 Ma — 宮崎駿的空白時刻",
+  "description": "刻意安排的靜謐與呼吸。記錄生活中的留白，定時喚醒片刻安寧，重拾宮崎駿電影中的「間」之美。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

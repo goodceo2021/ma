@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Noto Serif TC", "Shippori Mincho", "Songti TC", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-display: "Shippori Mincho", "Cinzel", "Noto Serif TC", serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FBF9F5;
+    color: #292524;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-cjk {
+    font-family: var(--font-serif);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.95;
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes rippleWave {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes windSway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 7s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatGentle 9s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: rippleWave 4s cubic-bezier(0.1, 0.7, 0.4, 1) infinite;
+}
+
+.animate-sway {
+  animation: windSway 6s ease-in-out infinite;
+}
+
+/* Subtle archival paper texture */
+.paper-texture {
+  background-color: #FBF9F5;
+  background-image: radial-gradient(#292524 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+}
